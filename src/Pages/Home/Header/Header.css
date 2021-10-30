@@ -1,0 +1,32 @@
+html,
+body {
+  overflow-x: hidden;
+}
+header {
+  width: 100vw;
+  height: 100vh;
+  background-color: #282932;
+  border-bottom-right-radius: 740px;
+}
+
+/*--------------------
+    media query
+-------------------*/
+/* for mobile */
+@media (max-width: 601px) {
+  .header-banner {
+    width: 100vh !important;
+  }
+  .header-banner img {
+    width: 50%;
+    margin-top: 20px !important;
+  }
+  .header-banner h1 {
+    font-size: 35px !important;
+    padding-top: 40px;
+  }
+  .header-banner p {
+    width: 50% !important;
+    text-align: justify;
+  }
+}

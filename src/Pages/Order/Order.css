@@ -1,0 +1,23 @@
+.nav-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 20px;
+}
+.nav-link a,
+.item-name {
+  text-decoration: none;
+  font-size: 19px;
+  color: white;
+  font-weight: 500;
+}
+#order-banner {
+  height: 50vh;
+  margin-top: 60px;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.5);
+
+  left: 0;
+  top: 0;
+  width: 100vw;
+}
