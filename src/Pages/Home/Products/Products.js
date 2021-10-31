@@ -24,7 +24,7 @@ const Products = () => {
     useEffect(()=>{
 
         setIsloading(true)
-        fetch(`http://localhost:5000/products`)
+        fetch(`https://mighty-plains-84607.herokuapp.com/products`)
            .then(res => res.json())
            .then(data => {
                 setItems(data);
@@ -33,17 +33,12 @@ const Products = () => {
     },[])
    
 if(isLoading){
-    return <Spinner style={{marginLeft:"50%",marginTop:"20%"}} animation="border" variant="primary" />
+    return <Spinner style={{marginLeft:"50%"}} animation="border" variant="primary" />
 }
 
     const HandaleAddToCart = id => {
-
        history.push(`/products/${id}`)
-       
     }
-
-
-
 
     return (
         <section  data-aos="fade-up">
@@ -52,7 +47,7 @@ if(isLoading){
         
       <article className="products-container">
       {
-          items.map(product => <Card className="product" style={{ width: '21rem',border:"none" }}>
+          items.map(product => <Card key={product._id} className="product" style={{ width: '21rem',border:"none" }}>
                <Button className="details-button" onClick={ () => HandaleAddToCart(product._id)} variant="primary">Book Now</Button>
           <Card.Img style={{width:"220px",marginLeft:"auto",marginRight:"auto"}} variant="top" src={product.image}/>
           <Card.Body>

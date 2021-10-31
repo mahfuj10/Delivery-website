@@ -1,0 +1,45 @@
+.resturant-details {
+  /* background-color: #fad487; */
+  background-color: #ffca2c;
+  width: 350px;
+  border-radius: 0 0 20px 20px;
+  height: 150px;
+}
+.retirants-section img {
+  border-radius: 20px 20px 0 0;
+}
+html,
+body {
+  overflow-x: hidden;
+}
+
+.retirants-section p {
+  font-size: 18px;
+  font-weight: 500;
+  color: rgb(82, 81, 81);
+}
+.resturant-details i {
+  font-size: 21px;
+}
+
+/*--------------------
+    media query
+-------------------*/
+/* for mobile */
+@media (max-width: 601px) {
+  .resturant-card img {
+    width: 100%;
+    height: 100%;
+  }
+  .resturant-card {
+    margin-left: 10px !important;
+    padding-left: 0 !important;
+  }
+  .col-lg-6 {
+    padding-left: 0 !important;
+    margin-bottom: 20px;
+  }
+  .resturant-card > aside {
+    width: 100% !important;
+  }
+}

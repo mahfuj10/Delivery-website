@@ -12,7 +12,7 @@ if(isLoading){
     return <Spinner style={{margin:"40%"}} animation="border" variant="primary" />
 }
 
-console.log(user);
+// console.log(user);
 
 return (
 

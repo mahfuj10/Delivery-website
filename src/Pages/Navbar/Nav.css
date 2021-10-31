@@ -16,3 +16,20 @@ nav a {
   border: none;
   margin-right: 40px;
 }
+
+.navTitle {
+  text-decoration: none;
+  padding-left: 300px;
+  font-size: 25px;
+}
+
+/*--------------------
+    media query
+-------------------*/
+/* for mobile */
+@media (max-width: 601px) {
+  .navTitle {
+    padding-left: 10px;
+    font-size: 19px;
+  }
+}

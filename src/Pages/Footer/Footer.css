@@ -1,0 +1,36 @@
+footer {
+  height: 500px;
+  background-color: black;
+  padding-top: 100px;
+  margin-top: 200px;
+}
+footer h5 {
+  margin-bottom: 20px;
+  color: white;
+}
+footer p {
+  color: rgb(226, 225, 225);
+}
+footer i {
+  color: rgb(196, 196, 196);
+}
+footer i:hover {
+  transition: 0.4s;
+  color: #f5bc13;
+}
+
+/*--------------------
+    media query
+-------------------*/
+/* for mobile */
+@media (max-width: 601px) {
+  footer {
+    height: 100%;
+  }
+  .footer-item {
+    padding-left: 10px !important;
+  }
+  footer {
+    /* margin-left: 10px; */
+  }
+}

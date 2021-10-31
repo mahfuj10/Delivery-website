@@ -6,6 +6,7 @@ import Auth from './Context/AuthContext';
 import AuthContext from './Context/AuthContext';
 import AddService from './Pages/AddService/AddService';
 import Cart, { addCartContext } from './Pages/Cart/Cart';
+import Footer from './Pages/Footer/Footer';
 import About from './Pages/Home/About/About';
 import Header from './Pages/Home/Header/Header';
 import Items from './Pages/Home/Items/Items';
@@ -15,6 +16,7 @@ import ManageOrder from './Pages/ManageOrder/ManageOrder';
 import Nav from './Pages/Navbar/Nav';
 import Order from './Pages/Order/Order';
 import PrivateRoute from './Pages/PrivateRoute/PrivateRoute';
+import Resturants from './Pages/Resturants/Resturants';
 
 
 function App() {
@@ -46,6 +48,8 @@ function App() {
               <Items />
               <Products />
               <About />
+              <Resturants />
+              <Footer />
             </Route>
 
             <PrivateRoute path="/products/:id">
@@ -58,6 +62,8 @@ function App() {
               <Items />
               <Products />
               <About />
+              <Resturants />
+              <Footer />
             </Route>
 
             <Route path="/login">
@@ -69,17 +75,15 @@ function App() {
               <ManageOrder />
             </Route>
 
-            
-
             <Route path="/addservice">
               <Nav />
               <AddService />
             </Route>
 
-            <Route path="/carts/:email">
+            <PrivateRoute path="/carts/:email">
               <Nav />
               <Cart />
-            </Route>
+            </PrivateRoute>
 
           </Switch>
         </BrowserRouter>

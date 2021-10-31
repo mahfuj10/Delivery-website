@@ -8,8 +8,15 @@
 .item-name {
   text-decoration: none;
   font-size: 19px;
+  /* z-index: 9; */
   color: white;
   font-weight: 500;
+}
+.deitals-item-name {
+  z-index: 12 !important;
+  color: white;
+  font-size: 60px;
+  padding-top: 150px !important;
 }
 #order-banner {
   height: 50vh;
@@ -20,4 +27,16 @@
   left: 0;
   top: 0;
   width: 100vw;
+}
+
+.buyer-details {
+  display: grid;
+  margin-top: 70px;
+  justify-content: center;
+}
+.buyer-details input {
+  width: 400px;
+  padding: 7px;
+  margin: 10px;
+  border: 1px solid gainsboro;
 }

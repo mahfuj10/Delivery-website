@@ -23,8 +23,8 @@ const Header = () => {
             <Container>
                <Row className="d-flex header-banner align-items-center pt-5">
                    <Col  lg={6} >
-                       <h1 data-aos="fade-right" className="text-light" style={{fontSize:"70px"}}>Express <br /> Home Delivery</h1>
-                       <p data-aos="fade-right" className="text-light mt-3 mb-4 fs-6">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum quibusdam alias ipsam, magnam libero praesentium. Aperiam, odio cupiditate harum aliquam.</p>
+                       <h1 data-aos="fade-right" className="text-light" style={{fontSize:"70px"}}>Lucky <br /> Home Delivery</h1>
+                       <p data-aos="fade-right" className="text-light mt-3 mb-4 fs-6">There are numerous benefits of the food delivery service — it expands your customer base, increases your revenue, gives your customers a variety of options, and it also offers unparalleled convenience.</p>
                        <button data-aos="fade-right" className="btn btn-warning px-4 py-2">Read More</button>
                    </Col>
                    <Col lg={6}>

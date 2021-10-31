@@ -3,7 +3,7 @@ import '../Products/Products.css';
 
 const Items = () => {
     return (
-        <section className="d-flex flex-wrap position-absolute
+        <section className="d-flex flex-wrap 
         gap-4 justify-content-center items-container" style={{top:"96%",left:'17%'}}>
 
             <aside className="d-flex  align-items-center gap-4  p-3 " style={{width:"16em",borderRadius:"5px"}}>

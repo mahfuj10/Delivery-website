@@ -29,9 +29,8 @@ const AddService = () => {
         const  service = {image:image.value, title:title.value, price:dateInput.value, descrition:descInput.value }
         // console.log(event);
         service.email = user?.email;
-        console.log(service);
        
-        fetch(`http://localhost:5000/addservice`,{
+        fetch(`https://mighty-plains-84607.herokuapp.com/addservice`,{
             method:"POST",
             headers:{
                 'content-type':'application/json'
@@ -66,10 +65,10 @@ const AddService = () => {
                         className="rounded me-2"
                         alt=""
                       />
-                      <strong className="me-auto">{title.value} added on home page</strong>
+                      <strong className="me-auto">{title?.value} Added on home page</strong>
                       <small>11 mins ago</small>
                     </Toast.Header>
-                    <Toast.Body>Woohoo, you're reading this text in a Toast!</Toast.Body>
+                    <Toast.Body>Wow Added successfuly </Toast.Body>
                   </Toast>
                 </Col>
                 {/* <Col xs={6}>
@@ -78,7 +77,7 @@ const AddService = () => {
               </Row>
         </article>
 
-    <form onSubmit={handaleSetEvent}  className='d-flex mt-5 addevent-box justify-content-center gap-5'>
+    <form onSubmit={handaleSetEvent}  className='d-flex mt-5 addevent-box justify-content-center gap-5 shadow-sm'>
 
            <article>
                <h6> Title</h6>

@@ -55,8 +55,15 @@ const googleSign = () => {
 
     return (
         <section>
-            <article>
-                <button onClick={googleSign}>Google sign</button>
+            <article className="d-flex justify-content-center align-items-center mt-5 pt-5">
+            <aside>
+                    <img width="450" src="https://image.freepik.com/free-vector/isometric-data-protection-concept-with-parent-child-login-window-lock-3d_1284-63713.jpg" alt="" />
+                </aside>
+                <aside>
+
+                <button className="px-5 py-2 btn-warning border-0 shadow-md" onClick={googleSign}>Google sign</button>
+                </aside>
+               
             </article>
         </section>
     );
