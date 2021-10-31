@@ -22,7 +22,7 @@ const Header = () => {
              <Nav />
             <Container>
                <Row className="d-flex header-banner align-items-center pt-5">
-                   <Col  lg={6} >
+                   <Col  lg={6} className="ms-3 ms-md-0">
                        <h1 data-aos="fade-right" className="text-light" style={{fontSize:"70px"}}>Lucky <br /> Home Delivery</h1>
                        <p data-aos="fade-right" className="text-light mt-3 mb-4 fs-6">There are numerous benefits of the food delivery service — it expands your customer base, increases your revenue, gives your customers a variety of options, and it also offers unparalleled convenience.</p>
                        <button data-aos="fade-right" className="btn btn-warning px-4 py-2">Read More</button>

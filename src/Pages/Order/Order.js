@@ -93,7 +93,7 @@ if(address !== '' && number !== ''){
  </article>
 
 
-            <article className="d-flex  gap-5 justify-content-center " style={{marginTop:'100px'}}>
+            <article className="d-flex flex-wrap  gap-5 justify-content-center " style={{marginTop:'100px'}}>
 
                 <aside>
                     <img width="423" src={item?.image} alt="" />
